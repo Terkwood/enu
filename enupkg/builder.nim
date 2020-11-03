@@ -112,6 +112,7 @@ gdobj Builder of Spatial:
       self.kept_holes.clear()
       self.save_blocks()
       self.load_vars()
+      self.engine.recycle_interpreter()
       debug(self.enu_script & " done.")
 
   proc running*: bool = self.is_running
